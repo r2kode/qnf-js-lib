@@ -18,7 +18,7 @@
     "build": "rm -rf ./dist && tsup",
     "lint": "eslint --color ./src/**",
     "lint:fix": "eslint --fix ./src/**",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest --run"
   },
   "keywords": [],
   "author": "r2k",
@@ -38,6 +38,7 @@
     "husky": "^8.0.3",
     "prettier": "^2.8.2",
     "tsup": "6.5.0",
-    "typescript": "*"
+    "typescript": "*",
+    "vitest": "^0.27.1"
   }
 }
