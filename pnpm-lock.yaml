@@ -12,6 +12,7 @@ specifiers:
   eslint-plugin-n: ^15.0.0
   eslint-plugin-prettier: ^4.2.1
   eslint-plugin-promise: ^6.0.0
+  husky: ^8.0.3
   prettier: ^2.8.2
   tsup: 6.5.0
   typescript: '*'
@@ -28,6 +29,7 @@ devDependencies:
   eslint-plugin-n: 15.6.1_eslint@8.31.0
   eslint-plugin-prettier: 4.2.1_iu5s7nk6dw7o3tajefwfiqfmge
   eslint-plugin-promise: 6.1.1_eslint@8.31.0
+  husky: 8.0.3
   prettier: 2.8.2
   tsup: 6.5.0_typescript@4.9.4
   typescript: 4.9.4
@@ -1836,6 +1838,12 @@ packages:
   /human-signals/2.1.0:
     resolution: {integrity: sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==}
     engines: {node: '>=10.17.0'}
+    dev: true
+
+  /husky/8.0.3:
+    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
   /ignore/5.2.4:
