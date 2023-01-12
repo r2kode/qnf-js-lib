@@ -23,5 +23,7 @@ module.exports = {
       },
     ],
     'comma-dangle': ['off'],
+    '@typescript-eslint/consistent-type-definitions': 'warn',
+    '@typescript-eslint/explicit-function-return-type': 'warn',
   },
 };
