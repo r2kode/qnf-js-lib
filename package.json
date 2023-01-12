@@ -1,5 +1,5 @@
 {
-  "name": "qnf-js-lib",
+  "name": "@r2kode/qnf-js-lib",
   "version": "1.0.0",
   "publishConfig": {
     "access": "public"
