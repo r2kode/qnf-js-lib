@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+    branches: ['main', 'alpha']
+  pull_request:
+    branches: ['main', 'alpha']
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm install -g pnpm
+      - run: pnpm i
+      - run: pnpm run lint
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm install -g pnpm
+      - run: pnpm i
+      - run: pnpm run test
+
+  build:
+    needs: [lint, test]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm install -g pnpm
+      - run: pnpm i
+      - run: pnpm run build
+  # security:
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - run: echo "TODO implement security check"
+  # publish:
+  #   needs: security
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - run: echo "TODO implement publishing on npm"
