@@ -56,6 +56,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
+      - run: pnpm i
       - name: Publish
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
