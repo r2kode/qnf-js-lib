@@ -60,6 +60,7 @@ jobs:
           node-version: 18
       - run: npm install -g pnpm
       - run: pnpm i
+      - run: pnpm build
       - name: Publish
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
