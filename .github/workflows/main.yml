@@ -40,12 +40,15 @@ jobs:
       - run: npm install -g pnpm
       - run: pnpm i
       - run: pnpm run build
-  # security:
-  #   needs: build
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v3
-  #     - run: echo "TODO implement security check"
+  security:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Snyk checks
+        uses: snyk/actions/node@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
   # publish:
   #   needs: security
   #   runs-on: ubuntu-latest
