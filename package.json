@@ -1,6 +1,6 @@
 {
   "name": "@r2kode/qnf-js-lib",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "publishConfig": {
     "access": "public"
   },
@@ -23,7 +23,8 @@
     "lint": "eslint --color ./src/**",
     "lint:fix": "eslint --fix ./src/**",
     "lint:staged": "eslint",
-    "test": "vitest --run"
+    "test": "vitest --run",
+    "semantic-release": "semantic-release"
   },
   "keywords": [],
   "author": "r2k",
