@@ -6,3 +6,4 @@ export {
   cloneWithGlobalMethod,
 } from './utils/objects.utils';
 export { getWords, getSentences } from './Intl/segmenter';
+export { formatCelsius, formatMinutes } from './Intl/units';
