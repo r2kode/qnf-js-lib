@@ -5,3 +5,4 @@ export {
   cloneWithJson,
   cloneWithGlobalMethod,
 } from './utils/objects.utils';
+export { getWords, getSentences } from './utils/text.utils';
