@@ -1,5 +1,5 @@
 import { test, assert } from 'vitest';
-import { getWords, getSentences } from '../text.utils';
+import { getWords, getSentences } from '../segmenter';
 
 const text =
   'chodił tyle lat! aż padł niski ton. Początek historii, którą znam :)';
