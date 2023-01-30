@@ -1,11 +1,7 @@
-type Obj<Type> = {
-  entry: Type;
-};
+export const cloneObj = <Obj>(obj: Obj): Obj => ({ ...obj });
 
-export const cloneObj = (obj: Obj<unknown>) => ({ ...obj });
-
-export const cloneWithJson = (obj: Obj<unknown>) =>
+export const cloneWithJson = <Obj>(obj: Obj): Obj =>
   JSON.parse(JSON.stringify(obj));
 
-export const cloneWithGlobalMethod = (obj: Obj<unknown>) =>
+export const cloneWithGlobalMethod = <Obj>(obj: Obj): Obj =>
   structuredClone(obj);
