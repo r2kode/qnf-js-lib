@@ -2,10 +2,10 @@
 
 For fun and learn
 
-## Help
+## Bookmrks
 
 [TS Cheatsheets](https://react-typescript-cheatsheet.netlify.app/)
 
 ## Bookmars
 
-[You’ve Got Options for Removing Event Listeners](https://www.macarthur.me/posts/options-for-removing-event-listeners)
+[30 seconds of code](https://www.30secondsofcode.org/js/p/1)
