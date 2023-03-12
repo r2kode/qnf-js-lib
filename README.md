@@ -9,3 +9,5 @@ For fun and learn
 ## Bookmars
 
 [30 seconds of code](https://www.30secondsofcode.org/js/p/1)
+
+[zod](https://zod.dev/)
