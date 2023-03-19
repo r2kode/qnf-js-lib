@@ -15,3 +15,5 @@ export { getWords, getSentences } from './Intl/segmenter';
 export { formatCelsius, formatMinutes } from './Intl/units';
 export { validateEmail } from './validators/email';
 export { addMutationObserver } from './dom/mutationObserver';
+
+export * from './toolkit';
